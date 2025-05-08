@@ -73,6 +73,10 @@ interface StudioState {
 
   // Text Selection Handler
   handleTextSelect: (text: string) => any[];
+
+  // Add new onboarding state
+  isOnboarded: boolean;
+  completeOnboarding: () => void;
 }
 
 const defaultDrafts = [
@@ -195,7 +199,10 @@ export const useStudioStore = create<StudioState>((set) => ({
       content: hook,
       type: 'alternative'
     }));
-  }
+  },
+
+  isOnboarded: false,
+  completeOnboarding: () => set({ isOnboarded: true }),
 }));
 
 export const availableModels = [
