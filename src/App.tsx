@@ -3,10 +3,18 @@ import { ErrorBoundary } from './components/shared';
 import ContentCalendar from './components/calendar/ContentCalendar';
 import ContentCreator from './components/layout/ContentCreator';
 import PostInitiatorModal from './components/calendar/PostInitiatorModal';
+import DeepLearnOnboarding from './components/onboarding/DeepLearnOnboarding';
 import { useStudioStore } from './store';
 
 function App() {
-  const { showStudio, setShowStudio, showPostInitiator, setShowPostInitiator } = useStudioStore();
+  const { 
+    showStudio, 
+    setShowStudio, 
+    showPostInitiator, 
+    setShowPostInitiator,
+    isOnboarded,
+    completeOnboarding
+  } = useStudioStore();
 
   const handleCreatePost = () => {
     setShowPostInitiator(true);
@@ -16,6 +24,10 @@ function App() {
     setShowPostInitiator(false);
     setShowStudio(true);
   };
+
+  if (!isOnboarded) {
+    return <DeepLearnOnboarding onComplete={completeOnboarding} />;
+  }
 
   return (
     <ErrorBoundary>
