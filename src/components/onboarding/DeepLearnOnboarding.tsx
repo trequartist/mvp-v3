@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Upload, Link, FileText, Brain, Sparkles, ArrowRight } from 'lucide-react';
+import { Upload, Link, FileText, Brain, Sparkles, ArrowRight, Check, Target } from 'lucide-react';
 import { useDropzone } from 'react-dropzone';
 import Logo from '../common/Logo';
 import ProcessingIndicator from '../common/ProcessingIndicator';
