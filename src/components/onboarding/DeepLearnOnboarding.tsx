@@ -190,7 +190,7 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
                 </div>
                 <div>
                   <h2 className="text-xl font-semibold">Your Profile Analysis</h2>
-                  <p className="text-sm text-gray-500">Here's what I've learned about you</p>
+                  <p className="text-sm text-gray-500">Here's what I've learned about you, Alex</p>
                 </div>
               </div>
             </div>
@@ -201,16 +201,22 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
                   <div className="p-4 bg-surface rounded-lg">
                     <h3 className="font-medium mb-2">Professional Background</h3>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Founder & CEO at TechStartup (2020-present)</li>
-                      <li>• Senior Product Manager at BigTech (2017-2020)</li>
-                      <li>• Software Engineer at Innovation Corp (2015-2017)</li>
+                      <li>• Founder & CEO at NexusAI (Current)</li>
+                      <li>• Expert in AI implementation for small businesses</li>
+                      <li>• Guided 200+ companies through AI adoption</li>
                     </ul>
                   </div>
 
                   <div className="p-4 bg-surface rounded-lg">
                     <h3 className="font-medium mb-2">Areas of Expertise</h3>
                     <div className="flex flex-wrap gap-2">
-                      {["AI/ML", "Product Strategy", "Tech Leadership", "Startup Growth"].map((tag) => (
+                      {[
+                        "AI Implementation",
+                        "Financial Inclusion",
+                        "Cultural Innovation",
+                        "Small Business Tech",
+                        "Product Strategy"
+                      ].map((tag) => (
                         <span
                           key={tag}
                           className="px-2 py-1 bg-kiwi/10 text-kiwi-dark rounded-full text-sm"
@@ -226,19 +232,22 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
                   <div className="p-4 bg-surface rounded-lg">
                     <h3 className="font-medium mb-2">Content Themes</h3>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• AI Implementation Strategies</li>
-                      <li>• Startup Journey & Lessons</li>
-                      <li>• Product Development Insights</li>
-                      <li>• Tech Industry Trends</li>
+                      <li>• Practical AI Implementation</li>
+                      <li>• The Human Side of AI</li>
+                      <li>• Cultural Innovation in FinTech</li>
+                      <li>• Small Business Transformation</li>
+                      <li>• AI Ecosystem Trends</li>
                     </ul>
                   </div>
 
                   <div className="p-4 bg-surface rounded-lg">
                     <h3 className="font-medium mb-2">Writing Style</h3>
                     <div className="space-y-2 text-sm text-gray-600">
-                      <p>• Technical yet accessible</p>
-                      <p>• Data-driven storytelling</p>
-                      <p>• Experience-based insights</p>
+                      <p>• Technical but accessible</p>
+                      <p>• Thoughtful and analytical</p>
+                      <p>• Uses metaphors to explain complex concepts</p>
+                      <p>• Straightforward with moments of dry humor</p>
+                      <p>• Passionate about practical AI impact</p>
                     </div>
                   </div>
                 </div>
