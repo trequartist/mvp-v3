@@ -24,7 +24,7 @@ const ProcessingIndicator: React.FC<ProcessingIndicatorProps> = ({
       <div className="relative">
         <Logo className={sizes[size]} />
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full"
+          className="absolute inset-0 bg-gradient-to-br from-kiwi-light to-kiwi rounded-full"
           animate={{ 
             scale: [1, 1.2, 1],
             opacity: [0.2, 0, 0.2]
