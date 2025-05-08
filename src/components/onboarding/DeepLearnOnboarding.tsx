@@ -208,6 +208,16 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
                   </div>
 
                   <div className="p-4 bg-surface rounded-lg">
+                    <h3 className="font-medium mb-2">Core Beliefs</h3>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• AI should enhance, not replace human capabilities</li>
+                      <li>• Cultural understanding is key to successful AI implementation</li>
+                      <li>• Small businesses deserve enterprise-grade AI solutions</li>
+                      <li>• Technology should adapt to humans, not vice versa</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-4 bg-surface rounded-lg">
                     <h3 className="font-medium mb-2">Areas of Expertise</h3>
                     <div className="flex flex-wrap gap-2">
                       {[
@@ -230,13 +240,22 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
 
                 <div className="space-y-4">
                   <div className="p-4 bg-surface rounded-lg">
-                    <h3 className="font-medium mb-2">Content Themes</h3>
+                    <h3 className="font-medium mb-2">Leadership Philosophy</h3>
                     <ul className="space-y-2 text-sm text-gray-600">
-                      <li>• Practical AI Implementation</li>
-                      <li>• The Human Side of AI</li>
-                      <li>• Cultural Innovation in FinTech</li>
-                      <li>• Small Business Transformation</li>
-                      <li>• AI Ecosystem Trends</li>
+                      <li>• Focus on practical solutions over theoretical possibilities</li>
+                      <li>• Build for real-world impact, not just technological advancement</li>
+                      <li>• Lead through experience sharing and authentic insights</li>
+                      <li>• Emphasize human-centered design in all solutions</li>
+                    </ul>
+                  </div>
+
+                  <div className="p-4 bg-surface rounded-lg">
+                    <h3 className="font-medium mb-2">Industry Perspectives</h3>
+                    <ul className="space-y-2 text-sm text-gray-600">
+                      <li>• Traditional financial systems overlook cultural nuances</li>
+                      <li>• AI's future lies in specialized, context-aware solutions</li>
+                      <li>• Small businesses are underserved by current AI offerings</li>
+                      <li>• Cultural adaptation is key to global financial inclusion</li>
                     </ul>
                   </div>
 
