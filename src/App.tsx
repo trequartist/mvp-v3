@@ -4,6 +4,7 @@ import ContentCalendar from './components/calendar/ContentCalendar';
 import ContentCreator from './components/layout/ContentCreator';
 import PostInitiatorModal from './components/calendar/PostInitiatorModal';
 import DeepLearnOnboarding from './components/onboarding/DeepLearnOnboarding';
+import StrategyRoom from './components/strategy/StrategyRoom';
 import { useStudioStore } from './store';
 
 function App() {
@@ -13,7 +14,9 @@ function App() {
     showPostInitiator, 
     setShowPostInitiator,
     isOnboarded,
-    completeOnboarding
+    completeOnboarding,
+    showStrategyRoom,
+    setShowStrategyRoom
   } = useStudioStore();
 
   const handleCreatePost = () => {
@@ -26,7 +29,14 @@ function App() {
   };
 
   if (!isOnboarded) {
-    return <DeepLearnOnboarding onComplete={completeOnboarding} />;
+    return <DeepLearnOnboarding onComplete={() => {
+      completeOnboarding();
+      setShowStrategyRoom(true);
+    }} />;
+  }
+
+  if (showStrategyRoom) {
+    return <StrategyRoom onBack={() => setShowStrategyRoom(false)} />;
   }
 
   return (

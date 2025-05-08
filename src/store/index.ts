@@ -74,9 +74,13 @@ interface StudioState {
   // Text Selection Handler
   handleTextSelect: (text: string) => any[];
 
-  // Add new onboarding state
+  // Onboarding State
   isOnboarded: boolean;
   completeOnboarding: () => void;
+
+  // Strategy Room State
+  showStrategyRoom: boolean;
+  setShowStrategyRoom: (show: boolean) => void;
 }
 
 const defaultDrafts = [
@@ -203,6 +207,9 @@ export const useStudioStore = create<StudioState>((set) => ({
 
   isOnboarded: false,
   completeOnboarding: () => set({ isOnboarded: true }),
+
+  showStrategyRoom: false,
+  setShowStrategyRoom: (show) => set({ showStrategyRoom: show })
 }));
 
 export const availableModels = [
