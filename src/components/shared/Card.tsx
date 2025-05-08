@@ -23,8 +23,8 @@ const Card: React.FC<CardProps> = ({
   return (
     <Component
       className={`
-        relative bg-white rounded-lg border border-gray-100/50 overflow-hidden
-        ${interactive ? 'cursor-pointer hover:border-blue-200/50' : ''}
+        relative bg-white rounded-lg border border-surface-tertiary/50 overflow-hidden
+        ${interactive ? 'cursor-pointer hover:border-kiwi/50' : ''}
         ${className}
       `}
       onClick={onClick}
