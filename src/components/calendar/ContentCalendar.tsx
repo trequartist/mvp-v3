@@ -48,7 +48,7 @@ const mockPosts: Post[] = [
   {
     id: 'w1-mon',
     title: "AI Implementation Failures",
-    date: new Date(2025, 2, 3),
+    date: new Date(2025, 4, 5),
     contentPillar: 'Practical AI Implementation',
     contentType: 'Text Post',
     brief: {
@@ -116,7 +116,7 @@ What's been your experience? Any implementation pitfalls or successes to share?
   {
     id: 'w1-wed',
     title: "The Pivot That Saved NexusAI",
-    date: new Date(2025, 2, 5),
+    date: new Date(2025, 4, 7),
     contentPillar: "Founder's Journey",
     contentType: 'Text Post',
     brief: {
@@ -133,7 +133,7 @@ What's been your experience? Any implementation pitfalls or successes to share?
   {
     id: 'w1-thu',
     title: "5 Signs Your Business Processes Need Automation",
-    date: new Date(2025, 2, 6),
+    date: new Date(2025, 4, 8),
     contentPillar: 'Practical AI Implementation',
     contentType: 'Carousel',
     brief: {
@@ -150,7 +150,7 @@ What's been your experience? Any implementation pitfalls or successes to share?
   {
     id: 'w1-fri',
     title: "OpenAI Announcement Analysis",
-    date: new Date(2025, 2, 7),
+    date: new Date(2025, 4, 9),
     contentPillar: 'AI Ecosystem Trends',
     contentType: 'Industry Commentary',
     brief: {
@@ -168,7 +168,7 @@ What's been your experience? Any implementation pitfalls or successes to share?
   {
     id: 'w2-mon',
     title: "AI Augmentation vs. Replacement",
-    date: new Date(2025, 2, 10),
+    date: new Date(2025, 4, 12),
     contentPillar: 'The Human Side of AI',
     contentType: 'Text Post',
     brief: {
@@ -179,7 +179,7 @@ What's been your experience? Any implementation pitfalls or successes to share?
   {
     id: 'w2-tue',
     title: "Beyond the Hype: What's Actually Possible with AI Today",
-    date: new Date(2025, 2, 11),
+    date: new Date(2025, 4, 13),
     contentPillar: 'AI Ecosystem Trends',
     contentType: 'LinkedIn Article',
     brief: {
@@ -200,7 +200,7 @@ const contentPillars = {
 };
 
 const ContentCalendar: React.FC<ContentCalendarProps> = ({ onCreatePost }) => {
-  const [currentMonth, setCurrentMonth] = useState(new Date(2025, 2, 1));
+  const [currentMonth, setCurrentMonth] = useState(new Date(2025, 4, 1)); // May 2025
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [hoveredDate, setHoveredDate] = useState<Date | null>(null);
   const [showStrategyRoom, setShowStrategyRoom] = useState(false);
