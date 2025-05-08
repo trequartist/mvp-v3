@@ -394,8 +394,8 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
 
       <div className="w-1/3 bg-night text-white p-8 flex flex-col">
         <div className="mb-8">
-          <h2 className="text-xl font-semibold mb-2">Deep Learning Progress</h2>
-          <p className="text-gray-400">Analyzing your professional profile and content style</p>
+          <h2 className="text-xl font-semibold mb-2 text-white">Deep Learning Progress</h2>
+          <p className="text-gray-200">Analyzing your professional profile and content style</p>
         </div>
 
         <div className="flex-1 space-y-4">
@@ -415,9 +415,9 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
               <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                 item.complete ? 'bg-kiwi' : 'bg-white/10'
               }`}>
-                <Check className={`w-4 h-4 ${item.complete ? 'text-white' : 'text-white/30'}`} />
+                <Check className={`w-4 h-4 ${item.complete ? 'text-white' : 'text-white/50'}`} />
               </div>
-              <span className={item.complete ? 'text-white' : 'text-white/50'}>
+              <span className={item.complete ? 'text-white' : 'text-white/70'}>
                 {item.label}
               </span>
             </div>
