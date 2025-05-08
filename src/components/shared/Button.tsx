@@ -24,9 +24,9 @@ const Button: React.FC<ButtonProps> = ({
   const baseStyles = 'relative inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg overflow-hidden';
   
   const variants = {
-    primary: 'bg-gradient-to-b from-kiwi to-kiwi-dark text-white hover:from-kiwi-dark hover:to-kiwi-dark',
-    secondary: 'bg-gradient-to-b from-surface to-surface-secondary text-text-primary hover:from-surface-secondary hover:to-surface-secondary',
-    outline: 'border border-surface-tertiary text-text-primary hover:bg-surface'
+    primary: 'bg-gradient-to-b from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700',
+    secondary: 'bg-gradient-to-b from-gray-50 to-gray-100 text-gray-700 hover:from-gray-100 hover:to-gray-200',
+    outline: 'border border-gray-200 text-gray-700 hover:bg-gray-50'
   };
 
   const sizes = {
