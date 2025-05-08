@@ -1,0 +1,19 @@
+v1:
+- Initial version of LinkedIn Content Studio
+- Features:
+  * Content Strategy view
+  * Content Calendar
+  * Content Studio with:
+    - AI Agents (Research, Copywriter, Audience Panel, Brand Voice)
+    - Canvas with Turbo Mode
+    - Backpocket Panel
+  * Brainstorm Mode
+- UI Components:
+  * Modern, production-ready design
+  * Responsive layouts
+  * Smooth animations with Framer Motion
+  * Lucide React icons
+- State Management:
+  * Zustand for global state
+  * TypeScript types
+- Current package version: 1.0.0

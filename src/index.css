@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-text-primary antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-text-secondary;
+  }
+}
+
+@layer components {
+  /* Luminous Input Field */
+  .luminous-input {
+    @apply relative bg-transparent border border-surface-tertiary rounded-lg transition-all duration-200;
+  }
+
+  .luminous-input:focus-within {
+    @apply border-transparent ring-2 ring-kiwi/20;
+  }
+
+  .luminous-input::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none rounded-lg;
+  }
+
+  /* Q Assistant Panel */
+  .q-assistant-panel {
+    @apply relative overflow-hidden;
+    background: linear-gradient(180deg, #F8F7F4 0%, #FFFFFF 100%);
+    border: 1px solid #E9E8E3;
+    box-shadow: inset 0 0 12px rgba(148, 193, 31, 0.1);
+  }
+
+  .q-assistant-message {
+    @apply p-4 rounded-lg text-text-primary transition-all duration-200;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+    box-shadow: inset 0 0 0 1px rgba(148, 193, 31, 0.1);
+  }
+
+  .q-assistant-message:hover {
+    box-shadow: inset 0 0 0 1px rgba(148, 193, 31, 0.2),
+                0 2px 4px rgba(148, 193, 31, 0.1);
+  }
+
+  /* Status Indicators */
+  .status-indicator {
+    @apply flex items-center gap-2 px-3 py-1.5 rounded-lg transition-colors;
+  }
+
+  .status-indicator.success {
+    @apply bg-kiwi/10 text-kiwi-dark;
+  }
+
+  .status-indicator.info {
+    @apply bg-teal/10 text-teal-dark;
+  }
+
+  .status-indicator.warning {
+    @apply bg-rust/10 text-rust-dark;
+  }
+
+  /* Luminous Card */
+  .luminous-card {
+    @apply relative bg-white rounded-lg border border-surface-tertiary/50 overflow-hidden;
+  }
+
+  .luminous-card::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none;
+  }
+
+  .luminous-card::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-white/10 opacity-0 transition-opacity pointer-events-none;
+  }
+
+  .luminous-card:hover::after {
+    @apply opacity-100;
+  }
+
+  /* Q Presence */
+  .q-presence {
+    @apply relative inline-flex items-center justify-center;
+  }
+
+  .q-presence::before {
+    content: '';
+    @apply absolute inset-0 bg-kiwi rounded-full animate-glow-pulse;
+  }
+
+  .q-presence::after {
+    content: '';
+    @apply absolute inset-[-4px] bg-kiwi/20 rounded-full animate-ambient-glow;
+  }
+}
+
+@layer utilities {
+  .morphing-text {
+    @apply transition-all duration-300;
+  }
+
+  .glass-effect {
+    @apply backdrop-blur-[8px] bg-white/80;
+  }
+
+  .inner-glow {
+    box-shadow: inset 0 0 12px rgba(148, 193, 31, 0.1);
+  }
+
+  .inner-glow-hover:hover {
+    box-shadow: inset 0 0 20px rgba(148, 193, 31, 0.2);
+  }
+
+  /* Animation Utilities */
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes ambient-glow {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-ambient-glow {
+    animation: ambient-glow 4s ease-in-out infinite;
+  }
+}
