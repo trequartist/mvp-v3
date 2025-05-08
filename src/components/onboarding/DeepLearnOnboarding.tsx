@@ -214,9 +214,9 @@ const DeepLearnOnboarding: React.FC<DeepLearnOnboardingProps> = ({ onComplete })
               complete: step === 'processing'
             },
             { 
-              icon: Database,
-              label: "Market Analysis",
-              description: "Cross-referencing industry trends",
+              icon: Brain,
+              label: "Deep User Analysis",
+              description: "Understanding your unique perspective",
               complete: step === 'processing'
             }
           ].map((item, index) => (
