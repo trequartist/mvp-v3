@@ -6,9 +6,9 @@ export default {
       colors: {
         // Primary Colors
         kiwi: {
-          DEFAULT: '#94C11F',
-          light: '#B5D55F',
-          dark: '#7A9F19'
+          DEFAULT: '#7BA60D', // Darker kiwi green
+          light: '#94C11F',
+          dark: '#5C7D0A'
         },
         teal: {
           DEFAULT: '#005E63',
@@ -43,7 +43,7 @@ export default {
         },
         // State Colors
         state: {
-          focus: '#94C11F',
+          focus: '#7BA60D',
           success: '#34C77C',
           warning: '#C86B27',
           error: '#DC3545'
